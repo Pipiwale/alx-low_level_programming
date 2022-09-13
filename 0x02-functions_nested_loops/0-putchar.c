@@ -1,7 +1,8 @@
 #include "_putchar"
 /**
- * main - Program that prints _putchar, followed by a new line
- * Return: Always 0
+ * main - Prints _putchar
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
