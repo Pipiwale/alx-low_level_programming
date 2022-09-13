@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Prints the first 52 fibonacci numbers
- *
- * Return: Nothing!
- */
+  * main - Prints the first 52 fibonacci numbers
+  *
+  * Return: Nothing!
+  */
 int main(void)
 {
 	int i = 0;
@@ -26,6 +26,6 @@ int main(void)
 		++i;
 	}
 
-	printf("\n")
-        return (0);
+	printf("\n");
+	return (0);
 }
