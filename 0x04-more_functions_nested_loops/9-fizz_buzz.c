@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 
 /**
  * main -  checks for a digit (0 through 9).
@@ -16,6 +16,10 @@ int main(void)
 			{
 				printf("Fizz");
 			}
+			if (x % 5 == 0)
+			{
+				printf("Buzz");
+			}
 		}
 		else
 		{
@@ -23,7 +27,7 @@ int main(void)
 		}
 		if (x != 100)
 		{
-			putchar(' ');
+		putchar(' ');
 		}
 	}
 	putchar('\n');
