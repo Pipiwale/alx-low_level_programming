@@ -1,7 +1,7 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_triangle -  checks for a digit (0 through 9).
+ * print_triangle -  checks for checks for a digit (0 through 9).
  * @size: size -  Variable
  * Return: Always 0.
  */
@@ -24,7 +24,7 @@ void print_triangle(int size)
 					_putchar('#');
 				}
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 	else
