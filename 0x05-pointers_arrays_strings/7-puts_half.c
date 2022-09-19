@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * puts_half - Prints half of a string
- * @str: The string to print
- *
- * Return: void
- */
+  * puts_half - Prints half of a string
+  * @str: The string to print
+  *
+  * Return: void
+  */
 void puts_half(char *str)
 {
 	int j = 0;
@@ -31,5 +31,5 @@ void puts_half(char *str)
 		_putchar(str[k]);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
