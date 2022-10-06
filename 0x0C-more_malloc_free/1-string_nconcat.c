@@ -1,42 +1,37 @@
-include "main.h"
-#include <stdlib.h>
+include <stdlib.h>
+
 /**
-* string_nconcat - prints concatenate string;
-* @s1: input string.
-* @s2: input string.
-* @n: len s2 string for print.
-* Return: Nothing.
-*/
+ * *string_nconcat - concatenates 2 strings
+ * @s1: pointer to first string
+ * @s2: pointer to second string
+ * @n: number of bytes to use from s2
+ *
+ * Return: pointer to newly created string, else NULL if failure occurs
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int l1, i, e;
-	char *a;
+	char *str;
+	unsigned int index, index2, len1, len2;
 
-	if (s1 == NULL)
+	if (s1 == 0)
 		s1 = "";
-
-	if (s2 == NULL)
+	if (s2 == 0)
 		s2 = "";
-	l1 = 0;
-	while (s1[l1])
-		l1++;
-
-	a = malloc(sizeof(*a) * l1 + n + 1);
-
-	if (a == NULL)
-		return (NULL);
-
-	for (i = 0, e = 0; i < (l1 + n); i++)
-	{
-		if (i < l1)
-		{
-			a[i] = s1[i];
-		}
-		else
-		{
-			a[i] = s2[e++];
-		}
-	}
-	a[i] = '\0';
-	return (a);
+	len1 = 0;
+	while (*(s1 + len1))
+		len1++;
+	len2 = 0;
+	while (*(s2 + len2))
+		len2++;
+	if (n >= len2)
+		n = len2;
+	str = malloc(sizeof(char) * (len1 + n + 1));
+	if (str == 0)
+		return (0);
+	for (index = 0; index < len1; index++)
+		*(str + index) = *(s1 + index);
+	for (index2 = 0; index2 < n; index2++, index++)
+		*(str + index) = *(s2 + index2);
+	*(str + index) = '\0';
+	return (str);
 }
