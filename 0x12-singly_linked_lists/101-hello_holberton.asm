@@ -1,5 +1,4 @@
-
-bal 	main
+global 	main
 	extern 	printf
 
 	section .text
@@ -11,3 +10,4 @@ main:
 	ret
 format:
 	db "Hello, Holberton", 10, 0
+Footer
