@@ -1,22 +1,4 @@
-
-Miguel22247
-/
-holbertonschool-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Discussions
-Actions
-Projects
-Security
-Insights
-holbertonschool-low_level_programming/0x14-bit_manipulation/0-binary_to_uint.c
-@Miguel22247
-Miguel22247 0-binary_to_uint.c
- 1 contributor
-32 lines (26 sloc)  391 Bytes
-#include "holberton.h"
+#include "main.h"
 /**
  * binary_to_uint - Entry Point
  * @b: const char
